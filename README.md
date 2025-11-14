@@ -1,5 +1,5 @@
 # 🟣 DailyPulse – Habit & Mood Tracker
-A clean, full-stack Spring Boot application that helps users track daily habits, log mood levels, and view analytics across any date range. DailyPulse demonstrates real-world backend architecture, REST API design, analytics computation, and a lightweight frontend — perfect for learning Spring Boot and showcasing practical software engineering skills.
+A clean, full-stack Spring Boot application that helps users track daily habits, log mood levels, and view analytics across any date range. DailyPulse demonstrates real-world backend architecture, REST API design, analytics computation, and a lightweight frontend perfect for learning Spring Boot and showcasing practical software engineering skills.
 
 ## 🚀 Features
 ### Habit Management
