@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DailyPulse – Habit & Mood Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="dp-header">
+    <h1>DailyPulse</h1>
+    <p>Track your habits and mood with a simple daily check-in.</p>
+  </header>
+
+  <main class="dp-container">
+    <!-- Habits section -->
+    <section class="card">
+      <h2>Habits</h2>
+
+      <form id="habit-form" class="dp-form">
+        <div class="field">
+          <label for="habit-name">Habit name</label>
+          <input id="habit-name" type="text" required />
+        </div>
+        <div class="field">
+          <label for="habit-description">Description (optional)</label>
+          <input id="habit-description" type="text" />
+        </div>
+        <button type="submit">Add Habit</button>
+      </form>
+
+      <h3>Existing habits</h3>
+      <ul id="habit-list" class="dp-list">
+        <!-- filled by main.js -->
+      </ul>
+    </section>
+
+    <!-- Daily check-in section -->
+    <section class="card">
+      <h2>Daily Check-in</h2>
+      <form id="checkin-form" class="dp-form">
+        <div class="field">
+          <label for="checkin-date">Date</label>
+          <input id="checkin-date" type="date" required />
+        </div>
+
+        <div class="field">
+          <label for="checkin-mood">Mood (1–5)</label>
+          <select id="checkin-mood" required>
+            <option value="">Select</option>
+            <option value="1">1 – Very low</option>
+            <option value="2">2</option>
+            <option value="3">3 – Okay</option>
+            <option value="4">4</option>
+            <option value="5">5 – Great</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="checkin-notes">Notes</label>
+          <textarea id="checkin-notes" rows="3"></textarea>
+        </div>
+
+        <div class="field">
+          <span>Completed habits:</span>
+          <div id="checkin-habits" class="dp-habit-checkboxes">
+            <!-- checkboxes filled by main.js -->
+          </div>
+        </div>
+
+        <button type="submit">Save Check-in</button>
+      </form>
+    </section>
+
+    <!-- Summary section -->
+    <section class="card">
+      <h2>Last 7 Days Summary</h2>
+      <div id="summary">
+        <p>Loading summary...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="dp-footer">
+    <small>DailyPulse &middot; Spring Boot + H2 demo</small>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
